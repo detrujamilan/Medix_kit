@@ -14,6 +14,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Medix_Kit-Medix_KitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Medix_Kit-Medix_KitTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		E9A7F224C3C442C488413C61 /* SF-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44536480766E4DBA8CB78F90 /* SF-Black.otf */; };
+		C2CF248C2D6C401F95E160E0 /* SF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D604FC9792994725BAAAF34A /* SF-Bold.otf */; };
+		BF30AB89073B43839A808D0B /* SF-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E3465DEAF9AF4298B094E9CB /* SF-Heavy.otf */; };
+		EEBAEE38FE0B4112B9539BEF /* SF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78133E7734034E07B1BDE74A /* SF-Light.otf */; };
+		BE4A35CDEE3C430EBD7FC4F2 /* SF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 073EBF1C8B8A430A89519115 /* SF-Medium.otf */; };
+		495BE11BD2F04E0BBCD6D3A1 /* SF-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4EAD62C9F042AEBF4832E4 /* SF-Regular.otf */; };
+		97EEFF8F62CF4BB3B582A852 /* SF-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41E4A3FD9D34C5BA5708516 /* SF-Semibold.otf */; };
+		ADA2A90448204F3C947BB563 /* SF-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC1EFD1A6A754BD9B747B1C4 /* SF-Thin.otf */; };
+		B09E7E773F0944879AE9C7DA /* SF-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 546206BDB52542E29E7EE7FA /* SF-Ultralight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Medix_Kit/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Medix_Kit-Medix_KitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medix_Kit-Medix_KitTests.release.xcconfig"; path = "Target Support Files/Pods-Medix_Kit-Medix_KitTests/Pods-Medix_Kit-Medix_KitTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		44536480766E4DBA8CB78F90 /* SF-Black.otf */ = {isa = PBXFileReference; name = "SF-Black.otf"; path = "../src/assets/fonts/SF-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D604FC9792994725BAAAF34A /* SF-Bold.otf */ = {isa = PBXFileReference; name = "SF-Bold.otf"; path = "../src/assets/fonts/SF-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E3465DEAF9AF4298B094E9CB /* SF-Heavy.otf */ = {isa = PBXFileReference; name = "SF-Heavy.otf"; path = "../src/assets/fonts/SF-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78133E7734034E07B1BDE74A /* SF-Light.otf */ = {isa = PBXFileReference; name = "SF-Light.otf"; path = "../src/assets/fonts/SF-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		073EBF1C8B8A430A89519115 /* SF-Medium.otf */ = {isa = PBXFileReference; name = "SF-Medium.otf"; path = "../src/assets/fonts/SF-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE4EAD62C9F042AEBF4832E4 /* SF-Regular.otf */ = {isa = PBXFileReference; name = "SF-Regular.otf"; path = "../src/assets/fonts/SF-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D41E4A3FD9D34C5BA5708516 /* SF-Semibold.otf */ = {isa = PBXFileReference; name = "SF-Semibold.otf"; path = "../src/assets/fonts/SF-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC1EFD1A6A754BD9B747B1C4 /* SF-Thin.otf */ = {isa = PBXFileReference; name = "SF-Thin.otf"; path = "../src/assets/fonts/SF-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		546206BDB52542E29E7EE7FA /* SF-Ultralight.otf */ = {isa = PBXFileReference; name = "SF-Ultralight.otf"; path = "../src/assets/fonts/SF-Ultralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				503390C53B66407C908F39BB /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +168,23 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		503390C53B66407C908F39BB /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				44536480766E4DBA8CB78F90 /* SF-Black.otf */,
+				D604FC9792994725BAAAF34A /* SF-Bold.otf */,
+				E3465DEAF9AF4298B094E9CB /* SF-Heavy.otf */,
+				78133E7734034E07B1BDE74A /* SF-Light.otf */,
+				073EBF1C8B8A430A89519115 /* SF-Medium.otf */,
+				AE4EAD62C9F042AEBF4832E4 /* SF-Regular.otf */,
+				D41E4A3FD9D34C5BA5708516 /* SF-Semibold.otf */,
+				AC1EFD1A6A754BD9B747B1C4 /* SF-Thin.otf */,
+				546206BDB52542E29E7EE7FA /* SF-Ultralight.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +281,15 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E9A7F224C3C442C488413C61 /* SF-Black.otf in Resources */,
+				C2CF248C2D6C401F95E160E0 /* SF-Bold.otf in Resources */,
+				BF30AB89073B43839A808D0B /* SF-Heavy.otf in Resources */,
+				EEBAEE38FE0B4112B9539BEF /* SF-Light.otf in Resources */,
+				BE4A35CDEE3C430EBD7FC4F2 /* SF-Medium.otf in Resources */,
+				495BE11BD2F04E0BBCD6D3A1 /* SF-Regular.otf in Resources */,
+				97EEFF8F62CF4BB3B582A852 /* SF-Semibold.otf in Resources */,
+				ADA2A90448204F3C947BB563 /* SF-Thin.otf in Resources */,
+				B09E7E773F0944879AE9C7DA /* SF-Ultralight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
