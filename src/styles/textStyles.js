@@ -3,7 +3,7 @@ import {Fonts} from '../constants/fonts';
 import {Colors} from '../constants/colors';
 
 export const textStyles = StyleSheet.create({
-  mainHeading: {
+  heading: {
     fontSize: 36,
     fontFamily: Fonts.SfBold,
     color: Colors.Madison,
@@ -21,13 +21,10 @@ export const textStyles = StyleSheet.create({
     lineHeight: 16,
     color: Colors.Madison,
   },
-  button: {
-    borderRadius: 18,
-    shadowColor: 'rgba(13, 63, 103, 0.1)',
-    shadowOffset: {width: 0, height: 16},
-    shadowOpacity: 1,
-    shadowRadius: 40,
-    elevation: 5,
-    
+  textBold: {
+    fontSize: 16,
+    fontFamily: Fonts.SfBold,
+    lineHeight: 24,
+    color: Colors.Madison,
   },
 });

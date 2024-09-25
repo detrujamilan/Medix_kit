@@ -2,9 +2,11 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import TabNavigator from './TabNavigator';
 import SplashScreen from '../screens/splash/SplashScreen';
-import OnboardingScreen from '../screens/onboarding/OnboardingScreen';
-import OnboardingScreeOne from '../screens/onboarding/OnboardingScreenOne';
-import OnboardingScreenTwo from '../screens/onboarding/OnboardingScreenTwo';
+import SecondOnboardingScreen from '../screens/onboarding/SecondOnboardingScreen';
+import FirstOnboardingScreen from '../screens/onboarding/FirstOnboardingScreen';
+import LastOnboardingScreen from '../screens/onboarding/LastOnboardingScreen';
+import LoginScreen from '../screens/Login/LoginScreen';
+import SignupScreen from '../screens/Signup/SignupScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,17 +14,37 @@ const StackNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{headerShown: false}}
-      initialRouteName="OnboardingScreen">
-      <Stack.Screen name="Splash" component={SplashScreen} />
-      <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
-      <Stack.Screen name="OnboardingScreeOne" component={OnboardingScreeOne} />
-      <Stack.Screen
-        name="OnboardingScreenTwo"
-        component={OnboardingScreenTwo}
-      />
-      <Stack.Screen name="Main" component={TabNavigator} />
+      initialRouteName="OnBoardingStack">
+      <Stack.Screen name="TabStack" component={TabNavigator} />
+      <Stack.Screen name="OnBoardingStack" component={OnBoardingStack} />
+      <Stack.Screen name="AuthStack" component={AuthStack} />
     </Stack.Navigator>
   );
 };
+
+export const OnBoardingStack = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="Splash" component={SplashScreen} />
+    <Stack.Screen
+      name="FirstOnboardingScreen"
+      component={FirstOnboardingScreen}
+    />
+    <Stack.Screen
+      name="SecondOnboardingScreen"
+      component={SecondOnboardingScreen}
+    />
+    <Stack.Screen
+      name="LastOnboardingScreen"
+      component={LastOnboardingScreen}
+    />
+  </Stack.Navigator>
+);
+
+export const AuthStack = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="Login" component={LoginScreen} />
+    <Stack.Screen name="Signup" component={SignupScreen} />
+  </Stack.Navigator>
+);
 
 export default StackNavigator;
