@@ -11,9 +11,9 @@ export const textStyles = StyleSheet.create({
   },
   bodyText: {
     fontSize: 15,
-    fontWeight: 'regular',
     color: Colors.Madison,
     fontFamily: Fonts.SfRegular,
+    lineHeight: 20,
   },
   skipText: {
     fontFamily: Fonts.SfBold,
@@ -26,5 +26,25 @@ export const textStyles = StyleSheet.create({
     fontFamily: Fonts.SfBold,
     lineHeight: 24,
     color: Colors.Madison,
+  },
+  labelText: {
+    fontFamily: Fonts.SfSemibold,
+    fontSize: 11,
+    lineHeight: 16,
+    color: Colors.Madison,
+  },
+  centeredBoldText: {
+    fontFamily: Fonts.SfBold,
+    fontSize: 13,
+    lineHeight: 14,
+    textAlign: 'center',
+    color: Colors.Madison,
+  },
+  centeredRegularText: {
+    fontFamily: Fonts.SfRegular,
+    fontSize: 13,
+    lineHeight: 14,
+    textAlign: 'center',
+    color: Colors.Heather,
   },
 });

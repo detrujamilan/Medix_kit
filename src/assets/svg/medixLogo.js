@@ -1,6 +1,6 @@
 import Svg, {Path} from 'react-native-svg';
 
-export const MedixLogo = () => (
+const MedixLogo = () => (
   <Svg width="52" height="51" viewBox="0 0 52 51" fill="none">
     <Path
       fillRule="evenodd"
@@ -10,3 +10,4 @@ export const MedixLogo = () => (
     />
   </Svg>
 );
+export default MedixLogo;
