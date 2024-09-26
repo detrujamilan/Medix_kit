@@ -30,39 +30,33 @@ const CustomTextInput = ({
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
-        <View>
-          <Text style={textStyles.labelText}>{label}</Text>
-          <View style={styles.inputRow}>
-            <View style={styles.textInputContainer}>
-              <TextInput
-                placeholder={placeholder}
-                value={value}
-                onChangeText={onChangeText}
-                style={[inputStyle, textStyles.bodyText]}
-                placeholderTextColor={Colors.Heather}
-                secureTextEntry={isPassword && !isVisible}
-              />
-            </View>
+        <Text style={textStyles.labelText}>{label}</Text>
+        <View style={styles.inputRow}>
+          <TextInput
+            placeholder={placeholder}
+            value={value}
+            onChangeText={onChangeText}
+            style={[inputStyle, textStyles.bodyText, styles.textInputContainer]}
+            placeholderTextColor={Colors.Heather}
+            secureTextEntry={isPassword && !isVisible}
+          />
 
-            {isPassword ? (
-              <TouchableOpacity onPress={() => setIsVisible(!isVisible)}>
-                <View style={{width: iconSize, height: iconSize}}>
-                  <Icon
-                    name={isVisible ? 'eye' : 'eye-off'}
-                    size={22}
-                    color={Colors.Madison}
-                  />
-                </View>
-              </TouchableOpacity>
-            ) : (
-              rightSideIcon &&
-              iconSource && (
-                <View style={{width: iconSize, height: iconSize}}>
-                  <Image source={iconSource} style={styles.iconImage} />
-                </View>
-              )
-            )}
-          </View>
+          {isPassword ? (
+            <TouchableOpacity onPress={() => setIsVisible(!isVisible)}>
+              <Icon
+                name={isVisible ? 'eye' : 'eye-off'}
+                size={22}
+                color={Colors.Madison}
+              />
+            </TouchableOpacity>
+          ) : (
+            rightSideIcon &&
+            iconSource && (
+              <View style={{width: iconSize, height: iconSize}}>
+                <Image source={iconSource} style={styles.iconImage} />
+              </View>
+            )
+          )}
         </View>
       </View>
     </View>
