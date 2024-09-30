@@ -47,4 +47,32 @@ export const textStyles = StyleSheet.create({
     textAlign: 'center',
     color: Colors.Heather,
   },
+  primaryText: {
+    fontFamily: Fonts.SfBold,
+    fontSize: 24,
+    lineHeight: 28,
+    alignItems: 'center',
+    color: Colors.Madison,
+  },
+  textCentered: {
+    fontFamily: Fonts.SfBold,
+    fontSize: 21,
+    lineHeight: 28,
+    textAlign: 'center',
+    color: Colors.Madison,
+  },
+  uppercaseText:{
+    fontFamily: Fonts.SfSemibold,  
+    fontSize: 13,
+    lineHeight: 16,
+    textAlign: 'center',
+    letterSpacing: 0.8,
+    color:Colors.Madison,
+  },
+  emphasizedText:{
+    fontFamily: Fonts.SfBold,
+    fontSize: 18,
+    lineHeight: 24,
+    color:Colors.Madison
+  }
 });

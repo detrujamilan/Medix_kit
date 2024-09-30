@@ -23,12 +23,13 @@ const CustomTextInput = ({
   iconSource,
   isPassword,
   inputStyle,
+  style
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const iconSize = Math.round(width * 0.059);
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container,style]}>
       <View style={styles.innerContainer}>
         <Text style={textStyles.labelText}>{label}</Text>
         <View style={styles.inputRow}>

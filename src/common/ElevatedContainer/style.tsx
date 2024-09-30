@@ -6,14 +6,14 @@ export const styles = StyleSheet.create({
     backgroundColor: Colors.White,
     borderBottomLeftRadius: 36,
     borderBottomRightRadius: 36,
-    shadowColor: 'rgba(13, 63, 103, 0.1)',
+    shadowColor: 'rgb(13, 63, 103, 0.1)',
     shadowOffset: {
       width: 0,
       height: 16,
     },
-    shadowOpacity: 1,
-    shadowRadius: 40,
-    elevation: 10,
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+    elevation: 16,
   },
   innerContainer: {
     marginTop: StatusBar.currentHeight,

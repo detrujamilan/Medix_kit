@@ -12,7 +12,7 @@ import TwitterIcon from '../../assets/svg/TwitterIcon';
 import MedixLogo from '../../assets/svg/MedixLogo';
 import styles from './style';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
   return (
     <ScreenWrapper
       translucent={true}
@@ -35,18 +35,22 @@ const LoginScreen = () => {
               rightSideIcon={true}
               iconSource={require('../../assets/images/Circle_checked.png')}
             />
-            <View style={styles.marginTop20}>
-              <CustomTextInput
-                label="Password"
-                placeholder="Enter Your Password"
-                isPassword={true}
-              />
-            </View>
+            <CustomTextInput
+              label="Password"
+              placeholder="Enter Your Password"
+              isPassword={true}
+              style={styles.marginTop20}
+            />
           </View>
 
           <CustomButton title="Sign In" />
 
-          <TouchableOpacity activeOpacity={0.7} style={styles.marginTop20}>
+          <TouchableOpacity
+            activeOpacity={0.7}
+            style={styles.marginTop20}
+            onPress={() =>
+              navigation.navigate('AuthStack', {screen: 'ForgotPassword'})
+            }>
             <Text style={textStyles.centeredBoldText}>Forgot Password?</Text>
           </TouchableOpacity>
         </View>

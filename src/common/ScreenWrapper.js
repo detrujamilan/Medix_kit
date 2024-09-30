@@ -13,7 +13,7 @@ const ScreenWrapper = ({
       <StatusBar
         barStyle={content}
         translucent={translucent}
-        backgroundColor={translucent && 'transparent'}
+        backgroundColor={translucent ? 'transparent' : 'transparent'}
       />
       <View style={[styles.container, style]}>{children}</View>
     </SafeAreaView>
