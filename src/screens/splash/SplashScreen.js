@@ -4,25 +4,22 @@ import {SvgXml} from 'react-native-svg';
 import {splashLogo} from '../../constants/svg';
 import {styles} from './SplashScreenStyle';
 import ScreenWrapper from '../../common/ScreenWrapper';
-import ProfileScreen from '../Profile/ProfileScreen';
+
 
 const SplashScreen = ({navigation}) => {
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     navigation.navigate('TabStack', {screen: 'Setting'});
-  //   }, 500);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.navigate('TabStack', {screen: 'Home'});
+    }, 500);
 
-  //   return () => clearTimeout(timer);
-  // }, [navigation]);
+    return () => clearTimeout(timer);
+  }, [navigation]);
   return (
-    // <ScreenWrapper translucent={true} style={styles.container}>
-    //   <View>
-    //     <SvgXml xml={splashLogo} />
-    //   </View>
-    // </ScreenWrapper>
-    <>
-      <ProfileScreen />
-    </>
+    <ScreenWrapper translucent={true} style={styles.container}>
+      <View>
+        <SvgXml xml={splashLogo} />
+      </View>
+    </ScreenWrapper>
   );
 };
 

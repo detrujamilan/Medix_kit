@@ -1,12 +1,12 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-const CalendarScreen = () => {
+const MessageScreen = () => {
   return (
     <View>
-      <Text>CalendarScreen</Text>
+      <Text>MessageScreen</Text>
     </View>
   );
 };
 
-export default CalendarScreen;
+export default MessageScreen;

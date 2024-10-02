@@ -1,12 +1,12 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-const EmailScreen = () => {
+const MyAppointmentScreen = () => {
   return (
     <View>
-      <Text>EmailScreen</Text>
+      <Text>MyAppointmentScreen</Text>
     </View>
   );
 };
 
-export default EmailScreen;
+export default MyAppointmentScreen;

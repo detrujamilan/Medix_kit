@@ -2,7 +2,6 @@ import {View, Text, Modal, Button} from 'react-native';
 import React, {useState} from 'react';
 import {BlurView} from '@react-native-community/blur';
 import CustomBackButton from '../../common/BackButton/CustomBackButton';
-import {Colors} from '../../constants/colors';
 import {textStyles} from '../../styles/textStyles';
 import CustomTextInput from '../../common/TextInput/CustomTextInput';
 import CustomCheckBox from '../../common/CheckBox/CustomCheckBox';

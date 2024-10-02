@@ -7,16 +7,14 @@ import styles from './style';
 const CustomBackButton = ({label, onPress}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.buttonContainer}>
-        <View style={styles.shadowBox}>
-          <TouchableOpacity onPress={onPress}>
-            <Icon name="chevron-back" size={20} />
-          </TouchableOpacity>
-        </View>
+      <TouchableOpacity style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.shadowBox} onPress={onPress}>
+          <Icon name="chevron-back" size={20} />
+        </TouchableOpacity>
         <View style={styles.labelContainer}>
           <Text style={textStyles.primaryText}>{label}</Text>
         </View>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };
