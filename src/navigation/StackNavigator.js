@@ -10,7 +10,10 @@ import SignupScreen from '../screens/Auth/ForgotPassword/Signup/SignupScreen';
 import ForgotPassword from '../screens/Auth/ForgotPassword/ForgotPassword';
 import OtpScreen from '../screens/Auth/Otp/OtpScreen';
 
+
 const Stack = createNativeStackNavigator();
+
+
 
 const StackNavigator = () => {
   return (

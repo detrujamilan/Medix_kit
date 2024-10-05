@@ -12,6 +12,7 @@ import ActiveMessage from '../assets/svg/ActiveMessage';
 import InActiveMessage from '../assets/svg/InActiveMessage';
 import ActiveSetting from '../assets/svg/ActiveSetting';
 import InActiveSetting from '../assets/svg/InActiveSetting';
+import {Colors} from '../constants/colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -23,6 +24,7 @@ const TabNavigator = () => {
         tabBarShowLabel: false,
         tabBarStyle: {
           height: 100,
+          backgroundColor:Colors.White,
         },
       }}>
       <Tab.Screen
