@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/home/HomeScreen';
 import SettingScreen from '../screens/setting/SettingScreen';
-import MessageScreen from '../screens/messages/MessageScreen';
+import MessageListScreen from '../screens/messages/MessageListScreen';
 import MyAppointmentScreen from '../screens/appoinment/MyAppointmentScreen';
 import ActiveHome from '../assets/svg/ActiveHome';
 import InActiveHome from '../assets/svg/InActiveHome';
@@ -45,7 +45,7 @@ const TabNavigator = () => {
       />
       <Tab.Screen
         name="Message"
-        component={MessageScreen}
+        component={MessageListScreen}
         options={{
           tabBarIcon: ({focused}) =>
             focused ? <ActiveMessage /> : <InActiveMessage />,

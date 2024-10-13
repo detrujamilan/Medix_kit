@@ -11,7 +11,6 @@ import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import React from 'react';
 
-
 export const SettingScreenData = [
   {
     id: 1,
@@ -85,35 +84,62 @@ export const topCategoryData = [
   },
 ];
 
-
-
 export const appoinmentsData = [
   {
-    id:1,
-    date:"20 Jan",
-    testTitle:"Headache and nausea",
-    drName:"Dr. Jonas Edmund",
-    bgColor:Colors.YellowOrange,
-    icon:<Feather name={"play"} size={28} color={Colors.Yellow}/>
+    id: 1,
+    date: '20 Jan',
+    testTitle: 'Headache and nausea',
+    drName: 'Dr. Jonas Edmund',
+    bgColor: Colors.YellowOrange,
+    icon: <Feather name={'play'} size={28} color={Colors.Yellow} />,
   },
   {
-    id:2,
-    date:"20 Jan",
-    testTitle:"Pregnancy test",
-    drName:"Dr. Jeremy James",
-    bgColor:Colors.Aquamarine,
-    icon:<Feather name={"phone-call"} size={28} color={Colors.Java}/>
+    id: 2,
+    date: '20 Jan',
+    testTitle: 'Pregnancy test',
+    drName: 'Dr. Jeremy James',
+    bgColor: Colors.Aquamarine,
+    icon: <Feather name={'phone-call'} size={28} color={Colors.Java} />,
   },
   {
-    id:3,
-    date:"20 Jan",
-    testTitle:"Problems with dental medica ...",
-    drName:"Dr. Anna Nicholas",
-    bgColor:Colors.Violet,
-    icon: <MaterialCommunityIcons
-      name={'message-text-outline'}
-      size={28}
-      color={Colors.Primary}
-    />
+    id: 3,
+    date: '20 Jan',
+    testTitle: 'Problems with dental medica ...',
+    drName: 'Dr. Anna Nicholas',
+    bgColor: Colors.Violet,
+    icon: (
+      <MaterialCommunityIcons
+        name={'message-text-outline'}
+        size={28}
+        color={Colors.Primary}
+      />
+    ),
   },
-]
+];
+
+export const UnreadMessageData = [
+  {
+    id: 1,
+    avatar: require('../assets/images/avatar.png'),
+    name: 'Medix Support',
+    message:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...',
+    date: '20 Jan',
+  },
+  {
+    id: 2,
+    avatar: require('../assets/images/avatar.png'),
+    name: 'Dr. Jeremy James',
+    message:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...',
+    date: '20 Jan',
+  },
+  {
+    id: 3,
+    avatar: require('../assets/images/avatar.png'),
+    name: 'Medix Support',
+    message:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...',
+    date: '20 Jan',
+  },
+];

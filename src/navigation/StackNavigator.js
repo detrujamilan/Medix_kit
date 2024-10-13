@@ -9,11 +9,17 @@ import LoginScreen from '../screens/Login/LoginScreen';
 import SignupScreen from '../screens/Auth/ForgotPassword/Signup/SignupScreen';
 import ForgotPassword from '../screens/Auth/ForgotPassword/ForgotPassword';
 import OtpScreen from '../screens/Auth/Otp/OtpScreen';
-
+import LostConnection from '../screens/lostConnection/LostConnection';
+import LoadingState from '../screens/loadingState/LoadingState';
+import NoAppointment from '../screens/noAppointment/NoAppoinment';
+import UpComingAppointmentDetails from '../screens/upComingAppointment/UpComingAppointmentDetails';
+import CallEnded from '../screens/callEnded/CallEnded';
+import AppointmentVideoCall from '../screens/appoinment/AppointmentVideoCallScreen';
+import AppointmentVoiceCall from '../screens/appoinment/AppointmentVoiceCallScreen';
+import MessageList from '../screens/messages/MessageListScreen';
+import MessageDetail from '../screens/messages/MessageDetailScreen';
 
 const Stack = createNativeStackNavigator();
-
-
 
 const StackNavigator = () => {
   return (
@@ -23,6 +29,8 @@ const StackNavigator = () => {
       <Stack.Screen name="TabStack" component={TabNavigator} />
       <Stack.Screen name="OnBoardingStack" component={OnBoardingStack} />
       <Stack.Screen name="AuthStack" component={AuthStack} />
+      <Stack.Screen name="AppointmentStack" component={AppointmentStack} />
+      <Stack.Screen name="MessageStack" component={MessageStack} />
     </Stack.Navigator>
   );
 };
@@ -45,12 +53,32 @@ export const OnBoardingStack = () => (
   </Stack.Navigator>
 );
 
+export const AppointmentStack = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="NoAppointment" component={NoAppointment} />
+    <Stack.Screen name="UpComingAppointment" component={UpComingAppointmentDetails} />
+    <Stack.Screen name="CallEnded" component={CallEnded} />
+    <Stack.Screen name="AppointmentVideoCall" component={AppointmentVideoCall} />
+    <Stack.Screen name="AppointmentVoiceCall" component={AppointmentVoiceCall} />
+  </Stack.Navigator>
+);
+
+export const MessageStack = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="MessageDetail" component={MessageDetail} />
+    <Stack.Screen name="MessageList" component={MessageList} />
+
+  </Stack.Navigator>
+);
+
 export const AuthStack = () => (
   <Stack.Navigator screenOptions={{headerShown: false}}>
     <Stack.Screen name="Login" component={LoginScreen} />
     <Stack.Screen name="Signup" component={SignupScreen} />
     <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
     <Stack.Screen name="OtpScreen" component={OtpScreen} />
+    <Stack.Screen name="LostConnection" component={LostConnection} />
+    <Stack.Screen name="LoadingState" component={LoadingState} />
   </Stack.Navigator>
 );
 

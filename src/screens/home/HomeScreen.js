@@ -19,9 +19,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const HomeScreen = ({navigation}) => {
   return (
-    <ScreenWrapper
-      backgroundColor={Colors.White}
-      style={styles.screenWrapper}>
+    <ScreenWrapper backgroundColor={Colors.White} style={styles.screenWrapper}>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{flexGrow: 1}}>
@@ -81,8 +79,7 @@ const HomeScreen = ({navigation}) => {
                   Problems with dental medica ...
                 </Text>
                 <TouchableOpacity activeOpacity={0.7}>
-                  <View
-                    style={styles.iconBgStyle}>
+                  <View style={styles.iconBgStyle}>
                     <MaterialCommunityIcons
                       name={'message-text-outline'}
                       size={24}

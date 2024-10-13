@@ -7,13 +7,13 @@ export const styles = StyleSheet.create({
   screenWrapper: {
     flex: 1,
     paddingHorizontal: 20,
-    marginTop:StatusBar.currentHeight
   },
   topSection: {
-    marginTop: 24,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    paddingVertical: 5,
+    marginTop: 19,
   },
   userInfo: {
     flexDirection: 'row',
@@ -109,12 +109,12 @@ export const styles = StyleSheet.create({
   gridText: {
     paddingVertical: 14,
   },
-  iconBgStyle:{
+  iconBgStyle: {
     backgroundColor: 'rgba(107, 72, 255, 0.18)',
     width: 48,
     height: 48,
     borderRadius: 18,
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
 });

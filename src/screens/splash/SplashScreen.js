@@ -9,7 +9,7 @@ import ScreenWrapper from '../../common/ScreenWrapper';
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.navigate('TabStack', {screen: 'Home'});
+      navigation.navigate('TabStack', {screen: 'TabStack'});
     }, 500);
 
     return () => clearTimeout(timer);

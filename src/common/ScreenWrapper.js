@@ -1,10 +1,11 @@
 import React from 'react';
 import {View, SafeAreaView, StatusBar, StyleSheet} from 'react-native';
+import {Colors} from '../constants/colors';
 
 const ScreenWrapper = ({
   children,
   style,
-  backgroundColor = 'white',
+  backgroundColor = Colors.White,
   content = 'dark-content',
   translucent = false,
 }) => {
@@ -12,8 +13,8 @@ const ScreenWrapper = ({
     <SafeAreaView style={[styles.safeArea, {backgroundColor}]}>
       <StatusBar
         barStyle={content}
+        backgroundColor={backgroundColor}
         translucent={translucent}
-        backgroundColor={translucent ? 'transparent' : 'transparent'}
       />
       <View style={[styles.container, style]}>{children}</View>
     </SafeAreaView>
