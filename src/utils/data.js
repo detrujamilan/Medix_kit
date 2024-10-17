@@ -143,3 +143,26 @@ export const UnreadMessageData = [
     date: '20 Jan',
   },
 ];
+
+export const PayFeeData = [
+  {
+    id: 1,
+    cardType: 'Credit Card',
+    cardImg: require('../assets/images/visa.png'),
+  },
+  {
+    id: 2,
+    cardType: 'PayPal',
+    cardImg: require('../assets/images/paypal.png'),
+  },
+  {
+    id: 3,
+    cardType: 'Apply Pay',
+    cardImg: require('../assets/images/applePay.png'),
+  },
+  {
+    id: 4,
+    cardType: 'Bitcoin',
+    cardImg: require('../assets/images/bitCoin.png'),
+  },
+];

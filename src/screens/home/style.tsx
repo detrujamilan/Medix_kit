@@ -36,10 +36,6 @@ export const styles = StyleSheet.create({
     height: 283,
     alignSelf: 'center',
   },
-  illustration: {
-    width: '100%',
-    height: '100%',
-  },
   infoCardContainer: {
     position: 'absolute',
     bottom: 0,
@@ -116,5 +112,75 @@ export const styles = StyleSheet.create({
     borderRadius: 18,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  // PurchaseDetailsCss
+
+  container: {
+    flex: 1,
+    paddingHorizontal: 20,
+    marginTop: 30,
+  },
+  shadowContainer: {
+    backgroundColor: Colors.White,
+    borderRadius: 18,
+  },
+  headerContainer: {
+    padding: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  avatarContainerImg: {
+    width: 73,
+    height: 73,
+  },
+  infoContainer: {
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
+  billSummaryContainer: {
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderColor: Colors.AthensGray,
+    padding: 19,
+  },
+  billItem: {
+    paddingVertical: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  voucherInputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+
+  },
+  paymentContainer: {
+    padding: 20,
+    borderTopWidth: 1,
+    borderColor: Colors.AthensGray,
+  },
+  paymentMethod: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingTop: 20,
+  },
+  paymentIconContainer: {
+    width: 74,
+    height: 49,
+  },
+  voucherTextInput: {
+    height: 48,
+    backgroundColor: Colors.AthensGray,
+    paddingHorizontal: 20,
+    borderRadius: 18,
+  },
+  voucherButtonContainer: {
+    backgroundColor: Colors.White,
+    padding: 12,
+    borderRadius: 18,
+    width: '15%',
   },
 });

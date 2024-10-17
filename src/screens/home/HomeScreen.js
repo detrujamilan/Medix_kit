@@ -43,7 +43,7 @@ const HomeScreen = ({navigation}) => {
           <View style={styles.illustrationContainer}>
             <Image
               source={require('../../assets/images/Onboarding_Illustration.png')}
-              style={styles.illustration}
+              style={styles.avatar}
             />
           </View>
           <View style={styles.infoCardContainer}>
